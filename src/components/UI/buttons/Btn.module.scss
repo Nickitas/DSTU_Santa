@@ -1,0 +1,28 @@
+.Btn {
+    margin: 5px 0;
+    padding: 14.5px;
+    width: 100%;
+    border: 2px solid transparent;
+    background: #FF5D58;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    &:hover, &:active, &:focus {
+        background: #fff;
+        color: #FF5D58;
+        border: 2px solid #FF5D58;
+    }
+}
+@media (max-width:823px) {
+    .Btn {
+        margin: 4px 0;
+        padding: 11.5px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

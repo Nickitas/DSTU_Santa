@@ -1,0 +1,130 @@
+@font-face {
+    font-family: GHEA;
+    src: url(../../fonts/GHEA/Hayk/Davtyan/Bold.otf);
+}
+.main {
+    margin-top: 90px;
+    user-select: none;
+}
+#mainSanta {
+    margin: 0 auto;
+    display: none;
+    animation: wiggle 2.5s infinite;
+}
+.main_coll {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+}
+.title {
+    font-family: GHEA;
+    font-weight: 700;
+    font-size: 102px;
+    line-height: 129px;
+    text-align: center;
+    color: #F95154;    
+}
+.disc {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #6D6F71;
+}
+.form_wrapp {
+    margin: 56px auto;
+    padding: 88.5px 102px;
+    max-width: 1200px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 386px;
+        width: 100%;
+        h3 {
+            margin-bottom: 13px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #212121;
+        }
+    }
+}
+#santa {
+    position: absolute;
+    top: 125px;
+    right: 0;
+    display: block;
+    width: 568.16px;
+    height: 568.16px;
+    animation: wiggle 2.5s infinite;
+}
+@media (max-width:1673px) {
+    #santa {
+        width: 462px;
+        height: 462px;
+    }
+    .form_wrapp {
+        padding: 50px 102px;
+    }
+}
+@media (max-width:1126px) {
+    #mainSanta {
+        display: block;
+    }
+    #santa {
+        display: none;
+    }
+    .form_wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .form {
+            align-items: center;
+            min-width: 60%;
+        }
+    }
+}
+@media (max-width:823px) {
+    #mainSanta {
+        width: 228.34px;
+        height: 228.34px;
+    }
+    .title {   
+        font-size: 37px;
+        line-height: 47px;
+    }
+    .disc {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .form_wrapp {
+        margin: 34px auto;
+        padding: 37px 24px;
+        max-width: auto;
+        .form {
+            max-width: auto;
+            h3 {
+                margin-bottom: 0px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+}
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
